@@ -3,7 +3,7 @@
 import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
-import WhatsAppCTA from '@/components/WhatsAppCTA'
+import WhatsAppCTA, { CommunityCTA } from '@/components/WhatsAppCTA'
 import SocialIcons from '@/components/SocialIcons'
 
 function ThankYouContent() {
@@ -130,8 +130,8 @@ function ThankYouContent() {
               },
               {
                 num: '2',
-                title: 'הצטרפי לקהילה',
-                desc: 'בקהילת הוואטסאפ תקבלי תזכורות, תכנים ועדכונים שוטפים.',
+                title: 'הצטרפי לקבוצת ההדרכה',
+                desc: 'הלינק לזום והתזכורות נשלחים רק שם. אל תפספסי את המפגש.',
                 color: 'bg-cta',
               },
               {
@@ -163,6 +163,9 @@ function ThankYouContent() {
           </div>
         </div>
       </section>
+
+      {/* Secondary CTA: General community */}
+      <CommunityCTA />
 
       {/* Social */}
       <SocialIcons />
